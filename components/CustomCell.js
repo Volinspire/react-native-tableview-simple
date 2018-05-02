@@ -3,7 +3,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import { StyleSheet, TouchableHighlight, View } from 'react-native';
+import { StyleSheet, TouchableHighlight, View, ViewPropTypes } from 'react-native';
 
 const CustomCell = props => {
   console.warn(
@@ -63,7 +63,7 @@ CustomCell.propTypes = {
     PropTypes.arrayOf(PropTypes.element),
     PropTypes.element,
   ]).isRequired,
-  contentContainerStyle: View.propTypes.style,
+  contentContainerStyle: ViewPropTypes.style,
   highlightActiveOpacity: PropTypes.number,
   highlightUnderlayColor: PropTypes.string,
   isDisabled: PropTypes.bool,

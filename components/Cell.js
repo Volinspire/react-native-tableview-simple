@@ -3,7 +3,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import { StyleSheet, Text, TouchableHighlight, View } from 'react-native';
+import { StyleSheet, Text, TouchableHighlight, View, ViewPropTypes } from 'react-native';
 
 const Cell = props => {
   const {
@@ -406,7 +406,7 @@ Cell.propTypes = {
   cellContentView: PropTypes.element,
   cellImageView: PropTypes.element,
   cellAccessoryView: PropTypes.element,
-  contentContainerStyle: View.propTypes.style,
+  contentContainerStyle: ViewPropTypes.style,
   backgroundColor: PropTypes.string.isRequired,
   detail: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   detailTextStyle: Text.propTypes.style,
